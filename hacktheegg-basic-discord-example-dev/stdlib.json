@@ -1,0 +1,99 @@
+{
+  "name": "hacktheegg/basic-discord-example",
+  "timeout": 30000,
+  "connector": false,
+  "events": {
+    "functions/events/autocode/self/deployed.js": {
+      "name": "autocode.self.deployed"
+    },
+    "functions/events/discord/guild/member/add.js": {
+      "name": "discord.guild.member.add"
+    },
+    "functions/events/discord/message/https_delete.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/message/hello_there_spam.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/slash_ping.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "ping"
+      }
+    },
+    "functions/events/discord/the_rules_embed.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "rules"
+      }
+    },
+    "functions/events/discord/timetable.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "timetable"
+      }
+    },
+    "functions/events/discord/rickroll.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "rickroll"
+      }
+    },
+    "functions/events/discord/message/spam_exe.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/message/copyme.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/command_list.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "help"
+      }
+    },
+    "functions/events/discord/message/tic_tac_toe.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/message/new_year.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/message/colour.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/message/create-1.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/message/reaction/colour_add.js": {
+      "name": "discord.message.reaction.add"
+    },
+    "functions/events/discord/message/copyme_experiement.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/command.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "channel"
+      }
+    },
+    "functions/events/discord/message/create.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/scheduler/weekly.js": {
+      "name": "scheduler.weekly",
+      "subtype": {
+        "weekday": "Friday",
+        "time": "17:00 (5:00pm)",
+        "timezone": "Australia — Sydney, AU (+10:00, +11:00 DST)"
+      }
+    },
+    "functions/events/discord/message/reaction/colour_remove.js": {
+      "name": "discord.message.reaction.remove"
+    }
+  },
+  "env": [
+    {
+      "name": "PREFIX",
+      "description": "Your bot's prefix"
+    }
+  ]
+}
